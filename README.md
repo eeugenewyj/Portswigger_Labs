@@ -1,4 +1,4 @@
-# Portswigger_Labs
+# Portswigger Labs
 
 This repository contains my personal write‑ups for labs from the PortSwigger Web Security Academy.
 
