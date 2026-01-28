@@ -1,7 +1,7 @@
 
 ## Lab Description :
 
-![image](https://github.com/eeugenewyj/Portswigger_Labs/assets/Screenshot 2026-01-28 174433.png)
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-28%20174433.png)
 
 ## Solution :
 
@@ -82,7 +82,7 @@ Quick google search reveals 23 vulerabilities associated with Apache Struts 2 2.
 
 Submit the answer to solve the lab.
 
-![image](https://github.com/eeugenewyj/Portswigger_Labs/assets/Screenshot 2026-01-28 181355.png)
+![image](https://github.com/eeugenewyj/Portswigger_Labs/assets/Screenshot%202026-01-28%20181355.png)
 
 ## Further findings :
 
