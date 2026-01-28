@@ -1,7 +1,7 @@
 
 ## Lab Description :
 
-
+![image](https://github.com/eeugenewyj/Portswigger_Labs/assets/Screenshot 2026-01-28 174433.png)
 
 ## Solution :
 
@@ -82,7 +82,9 @@ Quick google search reveals 23 vulerabilities associated with Apache Struts 2 2.
 
 Submit the answer to solve the lab.
 
-Further findings,
+![image](https://github.com/eeugenewyj/Portswigger_Labs/assets/Screenshot 2026-01-28 181355.png)
+
+## Further findings :
 
 The solution to this lab can be achieved in multiple ways. An attacker can supply different types of invalid input to the `productId` parameter, such as `strings`, `floating-point values`, `special characters`, or `overly large numbers`, all of which trigger the same verbose stack trace and reveal the vulnerable framework and its version.
 
