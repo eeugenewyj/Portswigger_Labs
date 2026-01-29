@@ -1,6 +1,6 @@
 ## Lab Description :
 
-![image](<Screenshot 2026-01-29 132326.png>)
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20132326.png)
 
 ## Solution :
 
@@ -86,4 +86,4 @@ gdm:x:117:126:Gnome Display Manager:/var/lib/gdm3:/bin/false
 
 ```
 
-![image](<Screenshot 2026-01-29 140314.png>)
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20140314.png)
