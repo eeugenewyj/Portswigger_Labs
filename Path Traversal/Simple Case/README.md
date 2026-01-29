@@ -1,6 +1,6 @@
 ## Lab Description :
 
-![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%124131.png)
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20124131.png)
 
 ## Solution :
 
@@ -77,4 +77,4 @@ pulse:x:116:124:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
 gdm:x:117:126:Gnome Display Manager:/var/lib/gdm3:/bin/false
 ```
 
-![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%125827.png)
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20125827.png)
